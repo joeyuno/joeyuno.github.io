@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    padding:  2vh 0;
+    font-family: 'Open Sans', sans-serif;
+    /*position: fixed;*/
+    width: 100%;
+    /*z-index: 999;*/
+    box-sizing: border-box;
+}
+.fixed{
+background-color: #060a0b;}
+.contenedor{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titulo-logo{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.titulo-logo .logo p{
+    font-size: 2em;
+    font-weight: 700;
+    color: #fec400;
+}
+.titulo-logo nav ul li{
+    display: inline-block;
+    list-style: none;;
+}
+.titulo-logo nav ul li a{
+    display: block;
+    padding: 0.7em;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+
+}
+.titulo-logo nav ul li a:hover{
+    color: #fec400;
+}
+.saludo-contenedor{
+    width: 100%;
+    background: #fec400;
+    padding: 8vh 0;
+}
+main{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.saludo{
+    margin: 0 auto;    
+}
+.titulo-saludo {
+   margin: 0 auto;
+   text-align: center;
+    width: 80%;
+    
+}
+.titulo-saludo h1{
+    margin-bottom: 15px;
+}
+.servicios{
+    background: #222222;
+    width: 100%;
+    padding: 9vh 0;
+    margin-top: 60px;
+}
+.servicios .cabeza-servicios{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center
+
+}
+.cabeza-servicios h1{
+    color: #fec400;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.cabeza-servicios p{
+    color: #fff;
+}
+.catalogo-servicios{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.catalogo-servicios .producto-catalogo{
+    width: 28%;
+    text-align: center;
+    margin-top: 50px;
+}
+.producto-catalogo figure{
+    width: 60px;
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+    background: white;
+    overflow: hidden;
+}
+.producto-catalogo figure img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+}
+.producto-catalogo  .detalle-producto{
+    border: 1px solid white;
+    padding: 2em;
+    box-sizing: border-box;
+    margin-top: 1.5em;
+    color: white;
+}
+.producto-catalogo  .detalle-producto h5{
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+.producto-catalogo  .detalle-producto p{
+    font-size: 1em;
+    color: #a9a9a9;
+    line-height: 20px;
+}
+.nuestra-empresa{
+    width: 100%;
+    display: flex;
+}
+.nuestra-empresa .fondo-izquierdo{
+    width: 50%;
+}
+.nuestra-empresa .fondo-izquierdo .fondo{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+.nuestra-empresa .fondo-izquierdo .fondo img{
+    width: 100%;
+}
+.nuestra-empresa .lado-derecho{
+    width: 50%;
+    padding: 7em 0.2em 7em 4.3em;
+    box-sizing: border-box;
+}
+.nuestra-empresa .lado-derecho .titulo-lado-derecho{
+    width: 100%;
+    margin-bottom: 2em;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+.nuestra-empresa .lado-derecho .parrafos-lado-derecho p {
+    margin-bottom: 1em;
+}
+.nuestra-empresa .lado-derecho a{
+    padding: 1.2em;
+    display: block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 40%;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+}
