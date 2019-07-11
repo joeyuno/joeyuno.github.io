@@ -287,3 +287,31 @@ display: none;
 .foto:hover .marco-opaco{
 display: block;
 }
+.nuestro-equipo{
+    background-color: #222222;
+    padding:40px 5px; 
+
+}
+.contenedor-nuestro-equipo{
+    width: 90%;
+    margin: 50px auto;
+       
+}
+.equipo{
+    display: flex;
+    justify-content: space-between;
+}
+.equipo .tarjeta-presentacion{
+    width: 20%;
+    text-align: center;
+}
+.equipo figure{
+    width: 70%;
+    margin: 0px auto;
+}
+.equipo figure img{
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+}
+
