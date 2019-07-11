@@ -354,4 +354,13 @@ display: block;
     margin: 0px 5px;
     box-sizing: border-box;
 }
+@media screen and (max-width:570){
+    .equipo{
+        display: flex;
+        flex-direction: column;
+    }
+    .tarjeta-presentacion{
+        width: 100%;
+    }
+}
 
