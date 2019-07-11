@@ -301,17 +301,57 @@ display: block;
     display: flex;
     justify-content: space-between;
 }
+.titulo-NuestroEquipo{
+    margin: 10px auto 30px auto;
+    text-align: center;
+}
+.titulo-NuestroEquipo h2{
+    color: #fec400;
+    font-weight: 400;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+.titulo-NuestroEquipo p{
+        font-size: 14px;
+        color: #a9a9a9;
+}
 .equipo .tarjeta-presentacion{
     width: 20%;
     text-align: center;
 }
-.equipo figure{
+.equipo .tarjeta-presentacion figure{
     width: 70%;
     margin: 0px auto;
 }
-.equipo figure img{
+.equipo .tarjeta-presentacion figure img{
     width: 100%;
     display: block;
-    margin: 10px auto;
+    margin: 10px auto 15px auto;
+}
+.equipo .tarjeta-presentacion figure figcaption{
+    font-size: 22px;
+    color: #fec400;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.equipo .tarjeta-presentacion figure span{
+    color: white;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 20px;
+}
+.tarjeta-presentacion p{
+    color: #a9a9a9;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.tarjeta-presentacion .rojo:hover{
+    border: 1px solid red;
+
+}
+.tarjeta-presentacion i{
+    border: 1px solid white;
+    margin: 0px 5px;
+    box-sizing: border-box;
 }
 
