@@ -347,13 +347,127 @@ display: block;
 }
 .tarjeta-presentacion .rojo:hover{
     border: 1px solid red;
+    background: red;
 
 }
 .tarjeta-presentacion i{
     border: 1px solid white;
     margin: 0px 5px;
     box-sizing: border-box;
+    padding: 5px;
+    background: white;
+    opacity: 0.7;
 }
+.grupo-precios{
+    width: 100%;
+    background: #222222;
+
+}
+.grupo-precios h1{
+    color: #fec400;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.grupo-precios p{
+    text-align: center;
+    color: #a9a9a9;
+    margin-bottom: 20px;
+}
+
+.tarjetas-precios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:80%;
+    margin: auto;
+}
+.tarjetas-precios .contenedor-precios{
+    width: 25%;    
+    margin: 20px auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+.tarjetas-precios .contenedor-precios2{
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+      box-sizing: border-box;
+}
+.contenedor-precios .precios{
+    width: 100%;
+    margin: 20px auto;
+    padding: 30px 15px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    height: 400px;
+
+}
+.contenedor-precios2 .precios2{
+    width: 75%;
+    margin: 10px auto;
+    padding: 30px 15px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    height: 500px;
+}
+
+.precios h2, .precios2 h2{
+    font-size: 22px;
+    margin: 20px 0px;
+    color: #fff;
+    font-weight: 300;
+
+}
+.precios h3, .precios2 h3{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 10px 0px;
+    color: #fec400;
+}
+.precios p, .precios2 p{
+ font-size: 16px;
+ margin: 20px 0px;
+}
+.precios ul li, .precios2 ul li{
+    list-style-type: none;
+    margin: 10px 0px;
+    color: #a9a9a9;
+    font-size: 14px;
+}
+.boton{
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.boton .registrate{
+    
+    width:85% ;
+
+    text-align: center;
+    
+    margin: 20px auto;
+    
+    
+    box-sizing: border-box;
+}
+.registrate a{
+    display: block;
+    color: white;
+text-decoration: none;
+font-size: 16px;
+padding:10px 10px;
+background: red;
+}
+
+.registrate a:hover{
+    background: #ff88ff;
+}
+
+
 @media screen and (max-width:570px){
     .equipo{
         display: flex;
@@ -365,6 +479,7 @@ display: block;
         border-bottom: 3px solid white;
         padding-bottom: 10px;
         box-sizing:border-box ;
+        
     
     }
   
