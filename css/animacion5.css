@@ -49,10 +49,12 @@ background-color: #060a0b;}
 .saludo-contenedor{
     width: 100%;
     background: #fec400;
-    padding: 8vh 0;
+    padding: 8vh 0 0 0;
 }
 main{
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: auto;
 }
 .saludo{
     margin: 0 auto;    
@@ -466,8 +468,152 @@ background: red;
 .registrate a:hover{
     background: #ff88ff;
 }
+.testimonios{
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+.testimonios .testimonios-comentarios{
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
 
+.testimonios-comentarios .comentarios{
+    width: 90%;
+    text-align: center;
+    margin: 50px auto;
+   
+}
 
+.testimonios-comentarios .comentarios p{
+    margin-bottom: 20px;
+}
+
+.testimonios-comentarios .puntos-testimonios span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;;
+    
+    border: 1px solid #060a0b;
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+.activo{
+    background: #ff88ff;
+}
+
+.contacto{
+    width: 100%;
+    background-color: #222222;
+}
+.contacto header{
+    text-align: center;
+    margin: 40px auto;
+}
+.contacto header h1{
+    color: #fec400;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.contacto header p{
+    font-weight: 400;
+    font-size: 14px;
+    color: aliceblue;
+}
+
+.contacto .formulario{
+    text-align:center;
+    margin: auto;
+    width: 50%;
+    display: block;
+}
+.formulario form{
+    width: 100%;
+}
+ .formulario form input{
+     width: 100%;
+     height: 50px;
+     margin-bottom: 20px;
+     background-color: #222222;
+     color: #a9a9a9;
+     padding: 0px 0px 0px 10px;
+     box-sizing: border-box;
+ }
+ .formulario form textarea{
+    width: 100%;
+    margin-bottom: 20px;
+     background-color: #222222;
+     color: #a9a9a9;
+     padding: 10px 0px 0px 10px;
+     box-sizing: border-box;
+}
+
+.boton-contacto{
+    display: inline-block;
+    background: #fec400;
+    color: #222222;
+    margin:auto auto 50px auto;
+    padding: 15px 30px;
+    border: 0px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.boton-contacto:hover{
+    background: red;
+    color: #fff;
+}
+footer{
+    width: 100%;
+    background-color: #a9a9a9;
+
+}
+footer .piepagina{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+.piepagina .mapa{
+    width: 50%;
+}
+.piepagina .mapa iframe{
+    width: 100%;
+}
+.piepagina .informacion-desarrollo{
+    width: 50%;
+    background-color: #060a0b;
+    padding-left: 30px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.informacion-desarrollo h2{
+    color: aliceblue;
+ margin-bottom: 10px;
+}
+.informacion-desarrollo address i{
+    display: inline-block;
+    width: 100%;
+    margin: 5px 0px;
+    color:aliceblue;
+    font-style: normal;
+}
+.informacion-desarrollo p{
+    color: aliceblue;
+    margin-top: 30px;
+}
+.informacion-desarrollo p a{
+    text-decoration: none;
+    color: aliceblue;
+    font-style: italic;
+}
+
+.informacion-desarrollo 
 @media screen and (max-width:570px){
     .equipo{
         display: flex;
@@ -480,7 +626,7 @@ background: red;
         padding-bottom: 10px;
         box-sizing:border-box ;
         
-    
+
     }
   
 }

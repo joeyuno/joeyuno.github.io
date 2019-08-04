@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #zoom
+    {
+        background: green;
+        position:absolute;
+        left: 0px;
+
+    }
+    @keyframes agrandate{
+        from{
+            width: 50px;
+            height: 50px;
+            background: red;
+        }
+        to{
+            width: 500px;
+        }
+    }
+    .concss{
+        animation-name: agrandate;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 0.2s;
+        animation-direction: alternate;
+        background: red;
+    }
+    .contransition:hover{
+        font-size: 150px;
+        transition: font-size 2s linear;
+    }
+    </style>
+</head>
+<body>
+    <div id="zoom">
+
+    </div>
+    <p>soy un contador <span id="contador">10</span> </p>
+
+    <div class="concss">
+
+    </div>
+
+    <p class="contransition">hola soy con transition</p>
+
+    <script>
+    
+    let zoom=document.getElementById("zoom");
+    var contador=document.getElementById("contador");
+
+    var contando= function(){
+        if(parseFloat(contador.textContent)>0){
+        contador.textContent=parseFloat(contador.textContent)-1;}
+        else{
+            window.clearInterval(tiempo);
+        }
+
+    };
+    var tiempo=window.setInterval(contando, 1000);
+    zoom.style.width="60px";
+    zoom.style.height="50px";
+     var inicioTiempo=new Date().getTime();
+    var aumentado=function(){
+        var tiempoTranscurrido=new Date().getTime();
+        let aumentadoPixel=(60+((tiempoTranscurrido-inicioTiempo)/1000)*30);
+        zoom.style.width=aumentadoPixel+"px";
+        zoom.style.left=50 +"px";
+        if(aumentadoPixel<300){
+            window.requestAnimationFrame(aumentado);
+        }
+    };
+
+aumentado();
+
+    
+    </script>
+</body>
+</html>
